@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Quicksand", sans serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#sidebar {
+  background: #000;
+  position: fixed;
+  height: 100vh;
+  width: 50vw;
+  z-index: 2000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: all ease-in-out 300ms;
+}
+#sidebar.active {
+  transform: translateX(0%);
+}
+#sidebar .close {
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  cursor: pointer;
+}
+#sidebar ul li a {
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.main-header .container {
+  padding: 2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-header .container h1 a {
+  color: white;
+  font-size: 3rem;
+}
+.main-header .container nav a {
+  color: green;
+  margin-left: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #fff;
+}
+.main-header .container .menu {
+  font-size: 2.4rem;
+  cursor: pointer;
+  display: none;
+}
+
+#landing {
+  background-image: url("../img/landing.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+#landing #content {
+  width: 800px;
+  max-width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#landing #content h1 {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+#landing #content p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+#landing #content a {
+  display: inline-block;
+  background: #ad7e2c;
+  padding: 1rem 4rem;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 50px;
+}
+
+@media (max-width: 800px) {
+  .main-header .container h1 a {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .main-header .container nav {
+    display: none;
+  }
+  .main-header .container .menu {
+    display: block;
+  }
+
+  #landing #content h1 {
+    font-size: 2.5rem;
+  }
+  #landing #content p {
+    font-size: 1.2rem;
+  }
+  #landing #content a {
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
