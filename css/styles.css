@@ -188,14 +188,90 @@ ul {
   margin-bottom: 0.8rem;
 }
 
-#landing, #services, #welcome {
-  display: none;
-}
-
 #rooms .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
+}
+#rooms .container .room-unit {
+  text-align: center;
+}
+#rooms .container .room-unit h2 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+#rooms .container .room-unit p {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+#rooms .container .room-unit p span {
+  font-size: 2rem;
+  font-weight: 500;
+  display: inline-block;
+  margin: 0rem 0.8rem;
+}
+#rooms .container .room-unit a {
+  font-weight: 900;
+  color: #ad7e2c;
+}
+#rooms .container .room-unit:nth-child(1) .cover {
+  background-image: url("../img/rooms/room-1.jpg");
+}
+#rooms .container .room-unit:nth-child(2) .cover {
+  background-image: url("../img/rooms/room-2.jpg");
+}
+#rooms .container .room-unit:nth-child(3) .cover {
+  background-image: url("../img/rooms/room-3.jpg");
+}
+#rooms .container .room-unit:nth-child(4) .cover {
+  background-image: url("../img/rooms/room-4.jpg");
+}
+#rooms .container .room-unit:nth-child(5) .cover {
+  background-image: url("../img/rooms/room-5.jpg");
+}
+#rooms .container .room-unit:nth-child(6) .cover {
+  background-image: url("../img/rooms/room-6.jpg");
+}
+#rooms .container .room-unit:nth-child(7) .cover {
+  background-image: url("../img/rooms/room-7.jpg");
+}
+#rooms .container .room-unit:nth-child(8) .cover {
+  background-image: url("../img/rooms/room-8.jpg");
+}
+#rooms .container .room-unit .cover {
+  padding-top: 100%;
+  background-image: url("../img/rooms/room-1.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+}
+
+#landing, #services, #welcome, #rooms {
+  display: none;
+}
+
+#stats {
+  background: #ad7e2c;
+}
+#stats .container {
+  width: 80%;
+  color: white;
+  display: flex;
+  padding: 2rem 0rem;
+  justify-content: space-between;
+}
+#stats .container .unit {
+  text-align: center;
+}
+#stats .container .unit h2 {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+#stats .container .unit p {
+  font-weight: 900;
 }
 
 @media (max-width: 960px) {
@@ -236,9 +312,12 @@ ul {
     grid-template-columns: 1fr;
   }
   #rooms .container .room-unit {
-    background: green;
     width: 80%;
     margin: 0 auto;
+  }
+  #rooms .container .room-unit .content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.4rem;
   }
 
   #services .container {
