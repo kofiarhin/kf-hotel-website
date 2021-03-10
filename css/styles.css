@@ -15,6 +15,7 @@ html, body {
 
 body {
   overflow-x: hidden;
+  padding-bottom: 100rem;
 }
 
 a {
@@ -31,6 +32,13 @@ ul {
   width: 1200px;
   max-width: 90%;
   margin: 0 auto;
+}
+
+.title {
+  font-size: 4rem;
+  color: #ad7e2c;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 #sidebar {
@@ -122,16 +130,94 @@ ul {
   border-radius: 50px;
 }
 
+#welcome {
+  padding-top: 2rem;
+}
+#welcome .content-wrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: minmax(400px auto);
+  grid-gap: 30px;
+}
+#welcome .content-wrapper .cover {
+  background-image: url("../img/rooms/room-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#welcome .content-wrapper .content {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+#welcome .content-wrapper .content p {
+  margin-bottom: 1rem;
+}
+#welcome .content-wrapper .icons-wrapper {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+#welcome .content-wrapper .icons-wrapper i {
+  margin-right: 0.4rem;
+  transition: all ease-in-out 300ms;
+}
+#welcome .content-wrapper .icons-wrapper i:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#services {
+  padding: 2rem;
+}
+#services .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+#services .container .icon-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#services .container .icon-unit p {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #ad7e2c;
+}
+#services .container img {
+  width: 150px;
+  margin-bottom: 0.8rem;
+}
+
+#landing, #services, #welcome {
+  display: none;
+}
+
+#rooms .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+@media (max-width: 960px) {
+  #rooms .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #services .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #welcome .content-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (max-width: 800px) {
-  .main-header .container h1 a {
-    font-size: 2rem;
-    text-transform: uppercase;
-  }
-  .main-header .container nav {
-    display: none;
-  }
-  .main-header .container .menu {
+  #welcome .content-wrapper {
     display: block;
+  }
+  #welcome .content-wrapper .cover {
+    height: 500px;
+    margin-bottom: 2rem;
   }
 
   #landing #content h1 {
@@ -143,5 +229,34 @@ ul {
   #landing #content a {
     font-size: 1.2rem;
     padding: 0.8rem 2rem;
+  }
+}
+@media (max-width: 500px) {
+  #rooms .container {
+    grid-template-columns: 1fr;
+  }
+  #rooms .container .room-unit {
+    background: green;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #services .container {
+    display: block;
+  }
+  #services .container .icon-unit {
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  #welcome .content-wrapper .cover {
+    height: 350px;
+  }
+  #welcome .content-wrapper .content p {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
   }
 }/*# sourceMappingURL=styles.css.map */
