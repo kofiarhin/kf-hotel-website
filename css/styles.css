@@ -192,6 +192,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
+  padding: 2rem 0rem 4rem;
 }
 #rooms .container .room-unit {
   text-align: center;
@@ -216,6 +217,7 @@ ul {
 #rooms .container .room-unit a {
   font-weight: 900;
   color: #ad7e2c;
+  font-size: 1.1rem;
 }
 #rooms .container .room-unit:nth-child(1) .cover {
   background-image: url("../img/rooms/room-1.jpg");
@@ -270,6 +272,10 @@ ul {
   font-weight: 900;
 }
 
+#landing, #services, #rooms, #stats, #welcome {
+  display: none;
+}
+
 @media (max-width: 960px) {
   #rooms .container {
     grid-template-columns: repeat(2, 1fr);
@@ -295,6 +301,11 @@ ul {
   }
   #stats .container .unit h2 {
     font-size: 2rem;
+  }
+
+  #rooms .container .room-unit h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
   }
 
   #welcome .content-wrapper {
