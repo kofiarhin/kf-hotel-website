@@ -249,18 +249,14 @@ ul {
   margin-bottom: 1rem;
 }
 
-#landing, #services, #welcome, #rooms {
-  display: none;
-}
-
 #stats {
   background: #ad7e2c;
+  padding: 10rem 0rem;
 }
 #stats .container {
   width: 80%;
   color: white;
   display: flex;
-  padding: 2rem 0rem;
   justify-content: space-between;
 }
 #stats .container .unit {
@@ -288,6 +284,19 @@ ul {
   }
 }
 @media (max-width: 800px) {
+  #stats {
+    padding: 5rem;
+  }
+  #stats .container {
+    display: block;
+  }
+  #stats .container .unit {
+    margin-bottom: 1rem;
+  }
+  #stats .container .unit h2 {
+    font-size: 2rem;
+  }
+
   #welcome .content-wrapper {
     display: block;
   }

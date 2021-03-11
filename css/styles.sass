@@ -214,15 +214,14 @@ ul
                 position: center
             margin-bottom: 1rem
 
-#landing, #services, #welcome, #rooms
-    display: none
+// stats
 #stats
     background: $main
+    padding: 10rem 0rem
     .container
         width: 80%
         color: white
         display: flex
-        padding: 2rem 0rem
         justify-content: space-between
         .unit
             text-align: center
@@ -243,6 +242,14 @@ ul
         grid-template-columns: repeat(2, 1fr)
 
 @media(max-width: 800px)
+    #stats
+        padding: 5rem
+        .container
+            display: block
+        .container .unit
+            margin-bottom: 1rem
+        .container .unit h2
+            font-size: 2rem
 
     #welcome .content-wrapper
         display: block
@@ -260,7 +267,10 @@ ul
                 font-size: 1.2rem
                 padding: 0.8rem 2rem
 
+//smaller screen
+
 @media(max-width: 500px)
+
     #rooms .container
         grid-template-columns: 1fr
         .room-unit
