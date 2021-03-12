@@ -197,8 +197,8 @@ ul {
   text-align: center;
 }
 #rooms .container .room-unit h2 {
-  font-size: 2rem;
-  margin-bottom: 0.8rem;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
 }
 #rooms .container .room-unit p {
   font-size: 1.2rem;
@@ -208,7 +208,7 @@ ul {
   margin-bottom: 0.5rem;
 }
 #rooms .container .room-unit p span {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   display: inline-block;
   margin: 0rem 0.8rem;
@@ -359,8 +359,12 @@ ul {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  #rooms .container {
+  #facilities .unit-wrapper {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  #rooms .container {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   #services .container {
@@ -432,6 +436,15 @@ ul {
   }
 }
 @media (max-width: 500px) {
+  .main-header .container h1 a {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
   #rooms .container {
     grid-template-columns: 1fr;
   }

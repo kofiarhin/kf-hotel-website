@@ -173,8 +173,8 @@ ul
     .room-unit
         text-align: center
         h2
-            font-size: 2rem
-            margin-bottom: 0.8rem
+            font-size: 1.8rem
+            margin-bottom: 0.5rem
         p
             font-size: 1.2rem
             display: flex
@@ -183,7 +183,7 @@ ul
             margin-bottom: 0.5rem
             span
                 font:
-                    size: 2rem
+                    size: 1.8rem
                     weight: 500
                 display: inline-block
                 margin: 0rem 0.8rem
@@ -303,8 +303,10 @@ ul
 @media(max-width: 960px)
     #footer .container
         grid-template-columns: repeat(2, 1fr)
-    #rooms .container
+    #facilities .unit-wrapper
         grid-template-columns: repeat(2, 1fr)
+    #rooms .container
+        grid-template-columns: repeat(3, 1fr)
     #services .container
         grid-template-columns: repeat(2, 1fr)
 
@@ -360,7 +362,12 @@ ul
 //smaller screen
 
 @media(max-width: 500px)
-
+    .main-header .container
+        h1 a
+            font-size: 1.8rem
+            text-transform: uppercase
+    .title
+        font-size: 3rem
     #rooms .container
         grid-template-columns: 1fr
         .room-unit
