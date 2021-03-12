@@ -15,7 +15,6 @@ html, body {
 
 body {
   overflow-x: hidden;
-  padding-bottom: 100rem;
 }
 
 a {
@@ -272,11 +271,82 @@ ul {
   font-weight: 900;
 }
 
-#landing, #services, #rooms, #stats, #welcome {
-  display: none;
+#reviews {
+  padding: 2rem 0rem;
+}
+#reviews .container {
+  width: 70%;
+  text-align: center;
+}
+#reviews .container .indicators {
+  display: flex;
+  justify-content: center;
+}
+#reviews .container .indicators .circle {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid #000;
+  margin-right: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#reviews .container .indicators .circle.active {
+  background: #ad7e2c;
+}
+#reviews .fas {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #ad7e2c;
+}
+#reviews .unit p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+#reviews .icons-wrapper {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+#facilities .unit-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#facilities .unit-wrapper .unit {
+  padding-top: 100%;
+  background: black;
+  background-size: cover;
+}
+#facilities .unit-wrapper .unit:nth-child(1) {
+  background-image: url("../img/facility/facility-1.jpg");
+}
+#facilities .unit-wrapper .unit:nth-child(2) {
+  background-image: url("../img/facility/facility-2.jpg");
+}
+#facilities .unit-wrapper .unit:nth-child(3) {
+  background-image: url("../img/facility/facility-3.jpg");
+}
+#facilities .unit-wrapper .unit:nth-child(4) {
+  background-image: url("../img/facility/facility-4.jpg");
+}
+
+#footer {
+  background: black;
+  color: #fff;
+  padding: 3rem 0rem;
+}
+#footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
 }
 
 @media (max-width: 960px) {
+  #footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   #rooms .container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -290,6 +360,20 @@ ul {
   }
 }
 @media (max-width: 800px) {
+  #footer .container {
+    grid-template-columns: 1fr;
+  }
+
+  #reviews .container {
+    width: 100%;
+  }
+  #reviews .container .fas {
+    font-size: 3rem;
+  }
+  #reviews .container .unit p {
+    font-size: 1.2rem;
+  }
+
   #stats {
     padding: 5rem;
   }

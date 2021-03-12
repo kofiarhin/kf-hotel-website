@@ -15,7 +15,6 @@ html, body
     font-family: "Quicksand", sans serif
 body
     overflow-x: hidden
-    padding-bottom: 100rem
 a
     text-decoration: none
 
@@ -232,13 +231,68 @@ ul
                 margin-bottom: .8rem
             p
                 font-weight: 900
-#landing, #services, #rooms, #stats, #welcome
-    display: none
 
+#reviews
+    padding: 2rem 0rem
+    .container
+        width: 70%
+        text-align: center
+    .container .indicators
+        display: flex
+        justify-content: center
+        .circle
+            width: 20px
+            height: 20px
+            background: white
+            border: 1px solid $black
+            margin-right: 10px
+            border-radius: 50px
+            cursor: pointer
+            &.active
+                background: $main
+    .fas
+        font-size: 4rem
+        margin-bottom: 1rem
+        color: $main
+    .unit p
+        font-size: 1.4rem
+        margin-bottom: 1rem
+        line-height: 1.2
+    .icons-wrapper
+        font-size: 1.8rem
+        margin-bottom: 1rem
+
+#facilities .unit-wrapper
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    .unit
+        padding-top: 100%
+        background: black
+        background:
+            size: cover
+        &:nth-child(1)
+            background-image: url("../img/facility/facility-1.jpg")
+        &:nth-child(2)
+            background-image: url("../img/facility/facility-2.jpg")
+        &:nth-child(3)
+            background-image: url("../img/facility/facility-3.jpg")
+        &:nth-child(4)
+            background-image: url("../img/facility/facility-4.jpg")
+
+#footer
+    background: black
+    color: $white
+    padding: 3rem 0rem
+    .container
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 20px
 // media queries
 
 // large screen
 @media(max-width: 960px)
+    #footer .container
+        grid-template-columns: repeat(2, 1fr)
     #rooms .container
         grid-template-columns: repeat(2, 1fr)
     #services .container
@@ -248,6 +302,14 @@ ul
         grid-template-columns: repeat(2, 1fr)
 
 @media(max-width: 800px)
+    #footer .container
+        grid-template-columns: 1fr
+    #reviews .container
+        width: 100%
+        .fas
+            font-size: 3rem
+        .unit p
+            font-size: 1.2rem
     #stats
         padding: 5rem
         .container
