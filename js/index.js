@@ -5,7 +5,7 @@ const close = document.querySelector(".close")
 clear()
 menu.addEventListener("click", () => {
 
-        sidebar.classList.add("active")
+        sidebar.classList.toggle("active")
 })
 
 

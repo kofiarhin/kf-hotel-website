@@ -126,7 +126,7 @@ ul
         grid-gap: 30px
         .cover
             background:
-                image: url("../img/rooms/room-1.jpg")
+                image: url("../img/rooms/room-2.jpeg")
                 size: cover
                 position: center
         .content
@@ -192,25 +192,25 @@ ul
             color: $main
             font-size: 1.1rem
         &:nth-child(1) .cover
-            background-image: url("../img/rooms/room-1.jpg")
+            background-image: url("../img/rooms/room-1.jpeg")
         &:nth-child(2) .cover
-            background-image: url("../img/rooms/room-2.jpg")
+            background-image: url("../img/rooms/room-2.jpeg")
         &:nth-child(3) .cover
-            background-image: url("../img/rooms/room-3.jpg")
+            background-image: url("../img/rooms/room-3.jpeg")
         &:nth-child(4) .cover
-            background-image: url("../img/rooms/room-4.jpg")
+            background-image: url("../img/rooms/room-4.jpeg")
         &:nth-child(5) .cover
-            background-image: url("../img/rooms/room-5.jpg")
+            background-image: url("../img/rooms/room-5.jpeg")
         &:nth-child(6) .cover
-            background-image: url("../img/rooms/room-6.jpg")
+            background-image: url("../img/rooms/room-6.jpeg")
         &:nth-child(7) .cover
-            background-image: url("../img/rooms/room-7.jpg")
+            background-image: url("../img/rooms/room-7.jpeg")
         &:nth-child(8) .cover
-            background-image: url("../img/rooms/room-8.jpg")
+            background-image: url("../img/rooms/room-8.jpeg")
         .cover
             padding-top: 100%
             background:
-                image: url("../img/rooms/room-1.jpg")
+                image: url("../img/rooms/room-1.jpeg")
                 size: cover
                 position: center
             margin-bottom: 1rem
@@ -271,13 +271,13 @@ ul
         background:
             size: cover
         &:nth-child(1)
-            background-image: url("../img/facility/facility-1.jpg")
+            background-image: url("../img/facility/facility-1.jpeg")
         &:nth-child(2)
-            background-image: url("../img/facility/facility-2.jpg")
+            background-image: url("../img/facility/facility-2.jpeg")
         &:nth-child(3)
-            background-image: url("../img/facility/facility-3.jpg")
+            background-image: url("../img/facility/facility-3.jpeg")
         &:nth-child(4)
-            background-image: url("../img/facility/facility-4.jpg")
+            background-image: url("../img/facility/facility-4.jpeg")
 
 #footer
     background: black
@@ -287,6 +287,16 @@ ul
         display: grid
         grid-template-columns: repeat(4, 1fr)
         grid-gap: 20px
+    .col-title
+        font-size: 1.6rem
+        margin-bottom: 1rem
+    p
+        font-size: 1rem
+        line-height: 1.2
+    ul li
+        margin-bottom: 0.8rem
+        font-size: 1rem
+
 // media queries
 
 // large screen
@@ -301,9 +311,11 @@ ul
     #welcome .content-wrapper
         grid-template-columns: repeat(2, 1fr)
 
+// larger screen
 @media(max-width: 800px)
     #footer .container
         grid-template-columns: 1fr
+        text-align: center
     #reviews .container
         width: 100%
         .fas
@@ -339,6 +351,11 @@ ul
             a
                 font-size: 1.2rem
                 padding: 0.8rem 2rem
+    .main-header
+        nav
+            display: none
+        .container .menu
+            display: block
 
 //smaller screen
 
