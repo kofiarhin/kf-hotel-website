@@ -41,7 +41,7 @@ ul {
 }
 
 #sidebar {
-  background: #000;
+  background: #585858;
   position: fixed;
   height: 100vh;
   width: 50vw;
@@ -183,7 +183,7 @@ ul {
   color: #ad7e2c;
 }
 #services .container img {
-  width: 150px;
+  width: 130px;
   margin-bottom: 0.8rem;
 }
 
@@ -286,7 +286,7 @@ ul {
   width: 20px;
   height: 20px;
   background: white;
-  border: 1px solid #000;
+  border: 1px solid #585858;
   margin-right: 10px;
   border-radius: 50px;
   cursor: pointer;
@@ -342,16 +342,16 @@ ul {
   grid-gap: 20px;
 }
 #footer .col-title {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 #footer p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.2;
 }
 #footer ul li {
   margin-bottom: 0.8rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 960px) {
