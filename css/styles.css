@@ -554,4 +554,40 @@ ul {
   #events .container {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+#contact {
+  padding: 2rem;
+}
+
+.form-wrapper {
+  width: 840px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.form-wrapper label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+.form-wrapper input, .form-wrapper textarea {
+  outline: none;
+  border: none;
+  padding: 0.8rem 0rem;
+  width: 100%;
+  font-size: 1.2rem;
+  text-indent: 20px;
+}
+.form-wrapper textarea {
+  border: 1px solid black;
+  margin-bottom: 1rem;
+}
+.form-wrapper button {
+  outline: none;
+  border: none;
+  padding: 1rem 0rem;
+  width: 100%;
+  background: #ad7e2c;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
