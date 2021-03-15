@@ -1,0 +1,39 @@
+#events
+    padding: 4rem 0rem
+    .container
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 20px
+    .container .event-unit
+        text-align: center
+        &:nth-child(1)  .cover
+            background-image: url("../img/rooms/room-1.jpeg")
+        &:nth-child(2)  .cover
+            background-image: url("../img/rooms/room-2.jpeg")
+        &:nth-child(3)  .cover
+            background-image: url("../img/rooms/room-3.jpeg")
+        &:nth-child(4)  .cover
+            background-image: url("../img/rooms/room-4.jpeg")
+        .cover
+            padding-top: 100%
+            background:
+                size: cover
+                position: center
+            margin-bottom: 1rem
+        .content
+            h2
+                font-size: 1.5rem
+                margin-bottom: 0.8rem
+            p
+                font-size: 1.2rem
+            a
+                color: red
+                display: inline-block
+                background: $main
+                padding: 0.8rem 3rem
+                color: $white
+                border-radius: 50px
+                cursor: pointer
+@media(max-width: 960px)
+    #events .container
+        grid-template-columns: repeat(2, 1fr)
