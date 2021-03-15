@@ -1,0 +1,271 @@
+
+#landing
+    background:
+        image: url("../img/landing.jpg")
+        size: cover
+        position: center
+    color: $white
+    height: 100vh
+    text-align: center
+    position: relative
+
+    #content
+        width: 800px
+        max-width: 90%
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        h1
+            font-size: 4rem
+            line-height: 1
+            margin-bottom: 1rem
+        p
+            font-size: 1.8rem
+            margin-bottom: 1rem
+        a
+            display: inline-block
+            background: $main
+            padding: 1rem 4rem
+            color: $white
+            font-size: 1.4rem
+            border-radius: 50px
+
+// welcome
+#welcome
+    padding-top: 2rem
+    .content-wrapper
+        min-height: 100vh
+        display: grid
+        grid-template-columns: 1fr 2fr
+        grid-auto-rows: minmax(400px auto)
+        grid-gap: 30px
+        .cover
+            background:
+                image: url("../img/rooms/room-2.jpeg")
+                size: cover
+                position: center
+        .content
+            font-size: 1.2rem
+            line-height: 1.2
+            p
+                margin-bottom: 1rem
+        .icons-wrapper
+            font-size: 2rem
+            margin-top: 1rem
+            i
+                margin-right: 0.4rem
+                transition: all ease-in-out 300ms
+                &:hover
+                    transform: scale(1.2)
+                    cursor: pointer
+
+#services
+    padding: 2rem
+    .container
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 20px
+        .icon-unit
+            display: flex
+            flex-direction: column
+            align-items: center
+            p
+                font:
+                    size: 1.4rem
+                    weight: 900
+                color: $main
+        img
+            width: 130px
+            margin-bottom: 0.8rem
+
+// rooms
+
+#rooms .container
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 20px
+    padding: 2rem 0rem 4rem
+    .room-unit
+        text-align: center
+        h2
+            font-size: 1.8rem
+            margin-bottom: 0.5rem
+        p
+            font-size: 1.2rem
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-bottom: 0.5rem
+            span
+                font:
+                    size: 1.8rem
+                    weight: 500
+                display: inline-block
+                margin: 0rem 0.8rem
+        a
+            font-weight: 900
+            color: $main
+            font-size: 1.1rem
+        &:nth-child(1) .cover
+            background-image: url("../img/rooms/room-1.jpeg")
+        &:nth-child(2) .cover
+            background-image: url("../img/rooms/room-2.jpeg")
+        &:nth-child(3) .cover
+            background-image: url("../img/rooms/room-3.jpeg")
+        &:nth-child(4) .cover
+            background-image: url("../img/rooms/room-4.jpeg")
+        &:nth-child(5) .cover
+            background-image: url("../img/rooms/room-5.jpeg")
+        &:nth-child(6) .cover
+            background-image: url("../img/rooms/room-6.jpeg")
+        &:nth-child(7) .cover
+            background-image: url("../img/rooms/room-7.jpeg")
+        &:nth-child(8) .cover
+            background-image: url("../img/rooms/room-8.jpeg")
+        .cover
+            padding-top: 100%
+            background:
+                image: url("../img/rooms/room-1.jpeg")
+                size: cover
+                position: center
+            margin-bottom: 1rem
+
+// stats
+#stats
+    background: $main
+    padding: 10rem 0rem
+    .container
+        width: 80%
+        color: white
+        display: flex
+        justify-content: space-between
+        .unit
+            text-align: center
+            h2
+                font-size: 3rem
+                margin-bottom: .8rem
+            p
+                font-weight: 900
+
+#reviews
+    padding: 2rem 0rem
+    .container
+        width: 70%
+        text-align: center
+    .container .indicators
+        display: flex
+        justify-content: center
+        .circle
+            width: 20px
+            height: 20px
+            background: white
+            border: 1px solid $black
+            margin-right: 10px
+            border-radius: 50px
+            cursor: pointer
+            &.active
+                background: $main
+    .fas
+        font-size: 4rem
+        margin-bottom: 1rem
+        color: $main
+    .unit p
+        font-size: 1.4rem
+        margin-bottom: 1rem
+        line-height: 1.2
+    .icons-wrapper
+        font-size: 1.8rem
+        margin-bottom: 1rem
+
+#facilities .unit-wrapper
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    .unit
+        padding-top: 100%
+        background: black
+        background:
+            size: cover
+        &:nth-child(1)
+            background-image: url("../img/facility/facility-1.jpeg")
+        &:nth-child(2)
+            background-image: url("../img/facility/facility-2.jpeg")
+        &:nth-child(3)
+            background-image: url("../img/facility/facility-3.jpeg")
+        &:nth-child(4)
+            background-image: url("../img/facility/facility-4.jpeg")
+
+// media queries
+
+// large screen
+@media(max-width: 960px)
+    #facilities .unit-wrapper
+        grid-template-columns: repeat(2, 1fr)
+    #rooms .container
+        grid-template-columns: repeat(3, 1fr)
+    #services .container
+        grid-template-columns: repeat(2, 1fr)
+
+    #welcome .content-wrapper
+        grid-template-columns: repeat(2, 1fr)
+
+// larger screen
+@media(max-width: 800px)
+    #reviews .container
+        width: 100%
+        .fas
+            font-size: 3rem
+        .unit p
+            font-size: 1.2rem
+    #stats
+        padding: 5rem
+        .container
+            display: block
+        .container .unit
+            margin-bottom: 1rem
+        .container .unit h2
+            font-size: 2rem
+
+    #rooms
+        .container .room-unit h2
+            font-size: 1.5rem
+            margin-bottom: 0.4rem
+
+    #welcome .content-wrapper
+        display: block
+        .cover
+            height: 500px
+            margin-bottom: 2rem
+
+    #landing
+        #content
+            h1
+                font-size: 2.5rem
+            p
+                font-size: 1.2rem
+            a
+                font-size: 1.2rem
+                padding: 0.8rem 2rem
+
+//smaller screen
+
+@media(max-width: 500px)
+    #rooms .container
+        grid-template-columns: 1fr
+        .room-unit
+            width: 80%
+            margin: 0 auto
+            .content h2
+                font-size: 1.8rem
+                margin-bottom: 0.4rem
+    #services .container
+        display: block
+        .icon-unit
+            margin-bottom: 2rem
+
+    #welcome .content-wrapper
+        .cover
+            height: 350px
+        .content p
+            font-size: 1rem
+            margin-bottom: 0.8rem
