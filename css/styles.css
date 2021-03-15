@@ -41,7 +41,7 @@ ul {
 }
 
 #sidebar {
-  background: #585858;
+  background: #1f1a1a;
   position: fixed;
   height: 100vh;
   width: 50vw;
@@ -97,6 +97,17 @@ ul {
   font-size: 2.4rem;
   cursor: pointer;
   display: none;
+  color: #fff;
+}
+
+.main-header.mini {
+  min-height: 30vh;
+  background-image: url("../img/landing.jpg");
+  background-size: cover;
+  background-positon: center;
+}
+.main-header.mini .title {
+  color: #fff;
 }
 
 @media (max-width: 800px) {
@@ -343,7 +354,7 @@ ul {
   width: 20px;
   height: 20px;
   background: white;
-  border: 1px solid #585858;
+  border: 1px solid #1f1a1a;
   margin-right: 10px;
   border-radius: 50px;
   cursor: pointer;
