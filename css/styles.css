@@ -592,6 +592,9 @@ ul {
   max-width: 90%;
   margin: 0 auto;
 }
+.form-wrapper .form-unit {
+  margin-bottom: 1rem;
+}
 .form-wrapper label {
   display: block;
   font-size: 1.2rem;
