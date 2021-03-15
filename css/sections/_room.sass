@@ -1,0 +1,30 @@
+#room
+    padding: 0rem 0rem 3rem 0rem
+    .container
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        min-height: 100vh
+        grid-gap: 20px
+        .cover
+            background:
+                image: url("../img/rooms/room-1.jpeg")
+                size: cover
+                position: center
+        .content p
+            font-size: 1.2rem
+            line-height: 1.2
+            margin-bottom: 1rem
+        .content a
+            display: inline-block
+            background: $main
+            color: white
+            padding: 1rem 3rem
+            border-radius: 40px
+
+@media(max-width: 800px)
+    #room .container
+        grid-template-columns: 1fr
+        .cover
+            height: 400px
+        .content p
+            font-size: 1rem

@@ -222,7 +222,7 @@ ul {
 }
 #welcome .content-wrapper .icons-wrapper {
   font-size: 2rem;
-  margin-top: 1rem;
+  margin: 1rem 0rem;
 }
 #welcome .content-wrapper .icons-wrapper i {
   margin-right: 0.4rem;
@@ -231,6 +231,11 @@ ul {
 #welcome .content-wrapper .icons-wrapper i:hover {
   transform: scale(1.2);
   cursor: pointer;
+}
+#welcome .content-wrapper .text-wrapper a {
+  color: #ad7e2c;
+  font-size: 1.2rem;
+  font-weight: 900;
 }
 
 #services {
@@ -573,14 +578,14 @@ ul {
 }
 .form-wrapper input, .form-wrapper textarea {
   outline: none;
-  border: none;
+  border: 2px solid #ad7e2c;
   padding: 0.8rem 0rem;
   width: 100%;
   font-size: 1.2rem;
   text-indent: 20px;
 }
 .form-wrapper textarea {
-  border: 1px solid black;
+  border: 2px solid #ad7e2c;
   margin-bottom: 1rem;
 }
 .form-wrapper button {
@@ -592,4 +597,43 @@ ul {
   color: #fff;
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+#room {
+  padding: 0rem 0rem 3rem 0rem;
+}
+#room .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 100vh;
+  grid-gap: 20px;
+}
+#room .container .cover {
+  background-image: url("../img/rooms/room-1.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#room .container .content p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+#room .container .content a {
+  display: inline-block;
+  background: #ad7e2c;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 40px;
+}
+
+@media (max-width: 800px) {
+  #room .container {
+    grid-template-columns: 1fr;
+  }
+  #room .container .cover {
+    height: 400px;
+  }
+  #room .container .content p {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
