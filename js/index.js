@@ -25,7 +25,6 @@ function clear() {
 
 function animationController() {
 
-    console.log(window.location.pathname)
 
         // check page
         if(window.location.pathname === "/" || window.location.pathname === "/index.html") {
@@ -47,5 +46,94 @@ function animationController() {
 }
 
 
-menuController()
-animationController()
+function renderRooms() {
+
+   
+    console.log("render rooms")
+    
+    const container = document.querySelector("#rooms .container")
+
+    data.forEach( (item, index)  => {
+        
+
+         let markup = `
+            <div class="room-unit">
+                <div class="cover" style="background-image: url(../img/rooms/room-${item.id}.jpeg)"></div>
+                <div class="content">
+                    <h2>${item.name}</h2>
+                    <p class="price ">From <span>$${item.price}</span> Per Night</p>
+                    <a href="room.html?id=${item.id}">View More Details</a>
+                </div>
+
+            </div>
+    `; 
+
+        container.insertAdjacentHTML("beforeend", markup)
+    })
+    
+}
+
+ function renderRoom() {
+
+    const query = new URLSearchParams(window.location.search);
+
+    const domId = parseInt(query.get("id"))
+    const domContent = document.querySelector("#room .container")
+    console.log(domContent)
+
+    if(!domId) return location.assign("/")
+
+    const room = data.find( item => item.id === domId);
+
+    
+
+    const { id, name, price, description } = room;
+
+    
+    let markup = `
+            <div class="cover" style="background-image: url(./img/rooms/room-${id}.jpeg)"></div>
+
+            <div class="content">
+                <h1> ${name}</h1>
+                <p class="description">${description}</p>
+                <h2 class="price">$${price}</h2>
+                <a href="book.html?id=${id}">Book Now</a>
+            </div>
+    `;
+
+    domContent.innerHTML = markup
+    
+}
+
+
+// main controller
+function mainController() {
+
+    console.log("pass")
+    
+    animationController()
+    menuController()
+
+    // check page
+    const page = window.location.pathname;
+    
+    console.log(page)
+    if(page === "/rooms.html" || page === "/") {
+
+        renderRooms()
+    }
+
+    else if(page === "/index.html") {
+        renderRooms()
+    }
+
+    else if(page === "/room.html") {
+
+        renderRoom()
+    }
+
+}
+
+window.onload = function() {
+    mainController()
+}
