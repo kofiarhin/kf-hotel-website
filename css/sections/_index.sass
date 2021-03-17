@@ -1,13 +1,14 @@
 
 #landing
     background:
-        image: url("../img/landing.jpg")
+        image: url("../img/landing/landing-1.jpg")
         size: cover
         position: center
     color: $white
     height: 100vh
     text-align: center
     position: relative
+    animation: change 10s ease-in-out 300ms alternate infinite
 
     #content
         width: 800px
@@ -224,6 +225,15 @@
             background-image: url("../img/facility/facility-1.jpeg")
         &:nth-child(8)
             background-image: url("../img/facility/facility-3.jpeg")
+
+// animations
+@keyframes change
+    0%
+        background-image: url("../img/landing/landing-1.jpg")
+    50%
+        background-image: url("../img/landing/landing-2.jpg")
+    100%
+        backgfound-image: url("../img/landing/landing-3.jpg")
 
 // media queries
 

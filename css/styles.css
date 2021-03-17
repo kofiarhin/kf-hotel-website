@@ -164,13 +164,15 @@ ul {
   }
 }
 #landing {
-  background-image: url("../img/landing.jpg");
+  background-image: url("../img/landing/landing-1.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
   height: 100vh;
   text-align: center;
   position: relative;
+  -webkit-animation: change 10s ease-in-out 300ms alternate infinite;
+          animation: change 10s ease-in-out 300ms alternate infinite;
 }
 #landing #content {
   width: 800px;
@@ -414,6 +416,29 @@ ul {
   background-image: url("../img/facility/facility-3.jpeg");
 }
 
+@-webkit-keyframes change {
+  0% {
+    background-image: url("../img/landing/landing-1.jpg");
+  }
+  50% {
+    background-image: url("../img/landing/landing-2.jpg");
+  }
+  100% {
+    backgfound-image: url("../img/landing/landing-3.jpg");
+  }
+}
+
+@keyframes change {
+  0% {
+    background-image: url("../img/landing/landing-1.jpg");
+  }
+  50% {
+    background-image: url("../img/landing/landing-2.jpg");
+  }
+  100% {
+    backgfound-image: url("../img/landing/landing-3.jpg");
+  }
+}
 @media (max-width: 960px) {
   #facilities .unit-wrapper {
     grid-template-columns: repeat(2, 1fr);
