@@ -41,7 +41,7 @@ function animationController() {
             cta.classList.add("active")
             loader.classList.add("active")
 
-            }, 3000)
+            }, 2000)
         }
 }
 

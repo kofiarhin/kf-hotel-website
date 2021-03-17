@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +11,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 html, body {
-  font-family: "Quicksand", sans serif;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
@@ -103,7 +104,7 @@ ul {
 .main-header.mini {
   min-height: 30vh;
   margin-bottom: 4rem;
-  background-image: url("../img/landing.jpg");
+  background-image: url("../img/landing/landing-2.jpg");
   background-size: cover;
   background-positon: center;
 }
@@ -384,6 +385,7 @@ ul {
 #facilities .unit-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 4rem;
 }
 #facilities .unit-wrapper .unit {
   padding-top: 100%;
@@ -567,6 +569,8 @@ ul {
 }
 #events .container .event-unit .content p {
   font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1;
 }
 #events .container .event-unit .content a {
   color: red;
