@@ -40,5 +40,33 @@ const data = [
         description: "Praesent placerat ipsum a orci semper condimentum. Etiam tempor mi dui. Suspendisse lacinia est ac scelerisque feugiat. Morbi maximus Cras fermentum neque nec justo sollicitudin ornare. Curabitur ante augue, finibus in sollicitudin quis, elementum sed massa. Mauris sollicitudin pretium"
     },
 
+    {
+        id: 6,
+        price: 600,
+        name: "Master Quaters",
+        imageUrl: "room-6.jpeg",
+        description: "Praesent placerat ipsum a orci semper condimentum. Etiam tempor mi dui. Suspendisse lacinia est ac scelerisque feugiat. Morbi maximus Cras fermentum neque nec justo sollicitudin ornare. Curabitur ante augue, finibus in sollicitudin quis, elementum sed massa. Mauris sollicitudin pretium"
+    },
+    
+
+    {
+        id: 7,
+        price: 850,
+        name: "El Paradiso",
+        imageUrl: "room-6.jpeg",
+        description: "Praesent placerat ipsum a orci semper condimentum. Etiam tempor mi dui. Suspendisse lacinia est ac scelerisque feugiat. Morbi maximus Cras fermentum neque nec justo sollicitudin ornare. Curabitur ante augue, finibus in sollicitudin quis, elementum sed massa. Mauris sollicitudin pretium"
+    },
+
+
+    {
+        id: 8,
+        price: 750,
+        name: "Royal Dane Complax",
+        imageUrl: "room-6.jpeg",
+        description: "Praesent placerat ipsum a orci semper condimentum. Etiam tempor mi dui. Suspendisse lacinia est ac scelerisque feugiat. Morbi maximus Cras fermentum neque nec justo sollicitudin ornare. Curabitur ante augue, finibus in sollicitudin quis, elementum sed massa. Mauris sollicitudin pretium"
+    },
+
+
+
     
 ]
