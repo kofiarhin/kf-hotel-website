@@ -7,13 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esco Resort</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-
-
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- custom css -->
     <link rel="stylesheet" href="/css/styles.css">
@@ -90,12 +87,13 @@
     </section>
 
 
-    <section id="welcome">
+    <section id="welcome" data-aos="fade-left">
         <div class="container">
             <h1 class="title">Welcome</h1>
             <div class="content-wrapper">
-                <div class="cover"></div>
-                <div class="content">
+                <div class="cover" data-aos="fade-left"></div>
+
+                <div class="content" data-aos="fade-right">
 
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae deleniti debitis illum porro
                         animi
@@ -151,17 +149,17 @@
 
     <!-- services -->
     <section id="services">
-        <h1 class="title">Services</h1>
+        <h1 class="title" data-aos="fade-left">Services</h1>
         <div class="container">
 
-            <div class="icon-unit">
+            <div class="icon-unit" data-aos="fade-left">
                 <div class="icon">
                     <img src="/img/icons/icon-1.svg" alt="">
                 </div>
                 <p>24/7 Front Desk</p>
             </div>
 
-            <div class="icon-unit">
+            <div class="icon-unit" data-aos="fade-right">
                 <div class="icon">
                     <img src="/img/icons/icon-2.svg" alt="">
                 </div>
@@ -169,14 +167,14 @@
             </div>
 
 
-            <div class="icon-unit">
+            <div class="icon-unit" data-aos="fade-left">
                 <div class="icon">
                     <img src="/img/icons/icon-3.svg" alt="">
                 </div>
                 <p>24/7 Front Desk</p>
             </div>
 
-            <div class="icon-unit">
+            <div class="icon-unit" data-aos="fade-right">
                 <div class="icon">
                     <img src="/img/icons/icon-4.svg" alt="">
                 </div>
@@ -187,7 +185,7 @@
     </section>
 
     <section id="rooms">
-        <h1 class="title">Our Rooms</h1>
+        <h1 class="title" data-aos="fade-left">Our Rooms</h1>
 
         <div class="container">
 
@@ -287,22 +285,22 @@
 
         <div class="container">
 
-            <div class="unit">
+            <div class="unit" data-aos="fade-left">
                 <h2>523,234</h2>
                 <p>Happy Guest</p>
             </div>
 
-            <div class="unit">
+            <div class="unit" data-aos="fade-right">
                 <h2>404</h2>
                 <p>Rooms</p>
             </div>
 
-            <div class="unit">
+            <div class="unit" data-aos="fade-left">
                 <h2>20</h2>
                 <p>Conference Hall</p>
             </div>
 
-            <div class="unit">
+            <div class="unit" data-aos="fade-right">
                 <h2>4</h2>
                 <p>Destination</p>
             </div>
@@ -312,12 +310,12 @@
 
     <!-- reviews -->
     <section id="reviews">
-        <h1 class="title">Guest Reviews</h1>
+        <h1 class="title" data-aos="fade-left">Guest Reviews</h1>
 
         <div class="container">
 
             <i class="fas fa-quote-left"></i>
-            <div class="unit">
+            <div class="unit" data-aos="fade-right">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem incidunt perferendis doloribus nesciunt
                     ipsam expedita! Doloremque alias voluptatibus quia, repellendus iusto ab ratione exercitationem
                     voluptatum tempore saepe, quo, magni ipsa.</p>
@@ -347,10 +345,10 @@
     <section id="facilities">
         <h1 class="title">Facilities</h1>
         <div class="unit-wrapper">
-            <a href="facilities.html" class="unit"></a>
-            <a href="facilities.html" class="unit"></a>
-            <a href="facilities.html" class="unit"></a>
-            <a href="facilities.html" class="unit"></a>
+            <a href="facilities.html" class="unit" data-aos="fade-left"></a>
+            <a href="facilities.html" class="unit" data-aos="fade-right"></a>
+            <a href="facilities.html" class="unit" data-aos="fade-left"></a>
+            <a href="facilities.html" class="unit" data-aos="fade-right"></a>
         </div>
     </section>
     <!-- end facilities -->
@@ -396,6 +394,14 @@
         </div>
     </div>
 
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 600
+        });
+    </script>
     <script src="js/data.js"></script>
     <script src="js/index.js"></script>
 </body>

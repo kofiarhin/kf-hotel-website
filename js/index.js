@@ -1,3 +1,8 @@
+const state = {
+    visited: false
+}
+
+console.log(state)
 function menuController() {
 
     const menu = document.querySelector(".menu")
@@ -39,7 +44,13 @@ function animationController() {
             title.classList.add("active")
             slug.classList.add("active")
             cta.classList.add("active")
+
+            // remove loader
+
+            sessionStorage.setItem("visited", true)
             loader.classList.add("active")
+
+          
 
             }, 2000)
         }
@@ -49,15 +60,13 @@ function animationController() {
 function renderRooms() {
 
    
-    console.log("render rooms")
-    
     const container = document.querySelector("#rooms .container")
 
     data.forEach( (item, index)  => {
         
 
          let markup = `
-            <div class="room-unit">
+            <div class="room-unit" data-aos="fade-left">
                 <div class="cover" style="background-image: url(../img/rooms/room-${item.id}.jpeg)"></div>
                 <div class="content">
                     <h2>${item.name}</h2>
@@ -109,7 +118,6 @@ function renderRooms() {
 // main controller
 function mainController() {
 
-    console.log("pass")
     
     animationController()
     menuController()
