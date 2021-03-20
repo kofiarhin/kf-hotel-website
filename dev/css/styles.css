@@ -861,4 +861,93 @@ ul {
   100% {
     transform: rotate(360deg);
   }
+}
+#gallery {
+  padding: 2rem 0rem 5rem 0rem;
+}
+#gallery .container .col {
+  margin-bottom: 2rem;
+  padding: 2rem 0rem;
+}
+#gallery .container .col .unit-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+#gallery .container .col .unit-wrapper .unit {
+  height: 250px;
+  background-color: purple;
+  background-size: cover;
+  background-position: center;
+}
+#gallery .container .col h1 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #ad7e2c;
+}
+#gallery .container .col:nth-child(1) .unit-wrapper .unit:nth-child(1) {
+  background-image: url("../img/rooms/room-1.jpeg");
+}
+#gallery .container .col:nth-child(1) .unit-wrapper .unit:nth-child(2) {
+  background-image: url("../img/rooms/room-2.jpeg");
+}
+#gallery .container .col:nth-child(1) .unit-wrapper .unit:nth-child(3) {
+  background-image: url("../img/rooms/room-3.jpeg");
+}
+#gallery .container .col:nth-child(1) .unit-wrapper .unit:nth-child(4) {
+  background-image: url("../img/rooms/room-4.jpeg");
+}
+#gallery .container .col:nth-child(2) .unit-wrapper .unit:nth-child(1) {
+  background-image: url("../img/facility/facility-1.jpeg");
+}
+#gallery .container .col:nth-child(2) .unit-wrapper .unit:nth-child(2) {
+  background-image: url("../img/facility/facility-2.jpeg");
+}
+#gallery .container .col:nth-child(2) .unit-wrapper .unit:nth-child(3) {
+  background-image: url("../img/facility/facility-3.jpeg");
+}
+#gallery .container .col:nth-child(2) .unit-wrapper .unit:nth-child(4) {
+  background-image: url("../img/facility/facility-4.jpeg");
+}
+#gallery .container .col:nth-child(3) .unit-wrapper .unit:nth-child(1) {
+  background-image: url("../img/facility/facility-1.jpeg");
+}
+#gallery .container .col:nth-child(3) .unit-wrapper .unit:nth-child(2) {
+  background-image: url("../img/facility/facility-2.jpeg");
+}
+#gallery .container .col:nth-child(3) .unit-wrapper .unit:nth-child(3) {
+  background-image: url("../img/facility/facility-3.jpeg");
+}
+#gallery .container .col:nth-child(3) .unit-wrapper .unit:nth-child(4) {
+  background-image: url("../img/facility/facility-4.jpeg");
+}
+#gallery .container .col:nth-child(4) .unit-wrapper .unit:nth-child(1) {
+  background-image: url("../img/facility/facility-1.jpeg");
+}
+#gallery .container .col:nth-child(4) .unit-wrapper .unit:nth-child(2) {
+  background-image: url("../img/facility/facility-2.jpeg");
+}
+#gallery .container .col:nth-child(4) .unit-wrapper .unit:nth-child(3) {
+  background-image: url("../img/facility/facility-3.jpeg");
+}
+#gallery .container .col:nth-child(4) .unit-wrapper .unit:nth-child(4) {
+  background-image: url("../img/facility/facility-4.jpeg");
+}
+
+@media (max-width: 900px) {
+  #gallery .container .col .unit-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  #gallery .container .col .unit-wrapper {
+    grid-template-columns: 1fr;
+  }
+  #gallery .container .col .unit-wrapper .unit {
+    height: 300px;
+  }
+}
+#template {
+  padding: 8rem 0rem;
+  font-size: 1.2rem;
 }/*# sourceMappingURL=styles.css.map */
