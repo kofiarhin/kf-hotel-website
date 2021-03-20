@@ -28,6 +28,10 @@ ul {
   padding: 0;
 }
 
+#main {
+  overflow-x: hidden;
+}
+
 .container {
   width: 1200px;
   max-width: 93%;
