@@ -196,7 +196,7 @@ ul {
   margin-bottom: 1rem;
   opacity: 0;
   transform: translateX(300px);
-  transition: all ease-in-out 300ms;
+  transition: all ease-in-out 1s;
 }
 #landing #content h1.active {
   opacity: 1;
@@ -206,7 +206,7 @@ ul {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   transform: translateX(-300px);
-  transition: all ease-in-out 300ms;
+  transition: all ease-in-out 700ms;
   opacity: 0;
 }
 #landing #content p.active {
@@ -222,7 +222,7 @@ ul {
   border-radius: 50px;
   transform: translateY(100px);
   opacity: 0;
-  transition: all ease-in-out 300ms;
+  transition: all ease-in-out 800ms;
 }
 #landing #content a.active {
   transform: translateY(0px);
