@@ -54,9 +54,9 @@
 #welcome
     padding-top: 2rem
     .content-wrapper
-        min-height: 100vh
+        min-height: 60vh
         display: grid
-        grid-template-columns: 1fr 2fr
+        grid-template-columns: repeat(2, 1fr)
         grid-auto-rows: minmax(400px auto)
         grid-gap: 30px
         .cover
@@ -118,7 +118,7 @@
                 position: center
             margin-bottom: 1rem
         h2
-            font-size: 1.8rem
+            font-size: 1.5rem
             margin-bottom: 0.5rem
         p
             font-size: 1.2rem
@@ -128,7 +128,7 @@
             margin-bottom: 0.5rem
             span
                 font:
-                    size: 1.8rem
+                    size: 1.5rem
                     weight: 500
                 display: inline-block
                 margin: 0rem 0.8rem
@@ -136,22 +136,6 @@
             font-weight: 900
             color: $main
             font-size: 1.1rem
-        // &:nth-child(1) .cover
-        //     background-image: url("../img/rooms/room-1.jpeg")
-        // &:nth-child(2) .cover
-        //     background-image: url("../img/rooms/room-2.jpeg")
-        // &:nth-child(3) .cover
-        //     background-image: url("../img/rooms/room-3.jpeg")
-        // &:nth-child(4) .cover
-        //     background-image: url("../img/rooms/room-4.jpeg")
-        // &:nth-child(5) .cover
-        //     background-image: url("../img/rooms/room-5.jpeg")
-        // &:nth-child(6) .cover
-        //     background-image: url("../img/rooms/room-6.jpeg")
-        // &:nth-child(7) .cover
-        //     background-image: url("../img/rooms/room-7.jpeg")
-        // &:nth-child(8) .cover
-        //     background-image: url("../img/rooms/room-8.jpeg")
 
 // stats
 #stats
@@ -274,9 +258,18 @@
             font-size: 2rem
 
     #rooms
+        .container
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 20px
         .container .room-unit h2
-            font-size: 1.5rem
+            font-size: 1.3rem
             margin-bottom: 0.4rem
+        .container .room-unit a
+            font-size: 1rem
+            display: inline-block
+        .container .room-unit p
+            font-size: 1rem
+            margin: 0.5rem 0rem
 
     #welcome .content-wrapper
         display: block

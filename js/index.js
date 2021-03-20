@@ -64,9 +64,10 @@ function renderRooms() {
 
     data.forEach( (item, index)  => {
         
-
+    
+        const fade =  index%2 ? "fade-left" : "fade-right";
          let markup = `
-            <div class="room-unit" data-aos="fade-left">
+            <div class="room-unit" data-aos="${fade}">
                 <div class="cover" style="background-image: url(../img/rooms/room-${item.id}.jpeg)"></div>
                 <div class="content">
                     <h2>${item.name}</h2>
