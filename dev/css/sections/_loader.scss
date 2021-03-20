@@ -6,10 +6,23 @@
     z-index: 99999;
     width: 100vw;
     height: 100vh;
+    transition: all ease-in-out 1s;
+    opacity: 0.9;
 }
 
 .loader.active {
-    display: none
+    width: 0px;
+    opacity: 0
+}
+
+
+.loader h1 {
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%)
 }
 
 .loader-inner {

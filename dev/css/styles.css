@@ -108,7 +108,9 @@ ul {
 .main-header.mini {
   min-height: 30vh;
   margin-bottom: 4rem;
-  background-image: url("../img/landing/landing-2.jpg");
+  -webkit-animation: test linear 5s infinite;
+          animation: test linear 5s infinite;
+  background-image: url("../img/landing/landing-1.jpg");
   background-size: cover;
   background-positon: center;
 }
@@ -116,6 +118,29 @@ ul {
   color: #fff;
 }
 
+@-webkit-keyframes test {
+  0%, 100% {
+    background-image: url("../img/landing/landing-1.jpg");
+  }
+  40% {
+    background-image: url("../img/landing/landing-2.jpg");
+  }
+  80% {
+    background-image: url("../img/landing/landing-3.jpg");
+  }
+}
+
+@keyframes test {
+  0%, 100% {
+    background-image: url("../img/landing/landing-1.jpg");
+  }
+  40% {
+    background-image: url("../img/landing/landing-2.jpg");
+  }
+  80% {
+    background-image: url("../img/landing/landing-3.jpg");
+  }
+}
 @media (max-width: 800px) {
   .main-header nav {
     display: none;
@@ -742,10 +767,22 @@ ul {
   z-index: 99999;
   width: 100vw;
   height: 100vh;
+  transition: all ease-in-out 1s;
+  opacity: 0.9;
 }
 
 .loader.active {
-  display: none;
+  width: 0px;
+  opacity: 0;
+}
+
+.loader h1 {
+  color: white;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .loader-inner {
