@@ -1,2 +1,2 @@
 # A Simple Hotel Website
-# [Live Demo](https://60587929fc8a06bed944c0cb--kf-notel-website.netlify.app/)
+# [Live Demo](https://6058a782e13312fbc1af8c4e--kf-notel-website.netlify.app)
